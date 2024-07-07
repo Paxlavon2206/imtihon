@@ -15,6 +15,7 @@ function App() {
       <Route path="/about" element={<About/>}/>
       <Route path="/shop" element={<Shop/>}/>
       <Route path="/product/:slug" element={<ProductDetail/>}/>
+      <Route path="*">404 Not found</Route>
     </Routes>
     </>
   )

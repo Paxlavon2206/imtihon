@@ -15,7 +15,6 @@ export const ProductDetail = () => {
     }
     const params = useParams();
     const result = productData.find((obj)=> obj.id == +params.slug)
-
     const filteredSameData = productData.filter((item) => result.category == item.category)
   return (
     <MainLayout>
